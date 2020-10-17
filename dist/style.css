@@ -1,0 +1,245 @@
+html{
+    background: url('./tri_bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* PDF FORM CSS */
+#student_form{
+    display:none;
+}
+
+#student_form{
+    width: 100%;
+    max-width: 960px;
+    margin: 10% auto;
+    margin-top: 5%;
+}
+
+#header_text{
+    color:blue;
+    font-size: 20px;
+    font-weight: bold;
+    flex-grow: 3;
+    text-align:center;
+    vertical-align: center;
+}
+
+#form_header{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: stretch;
+}
+
+#uni_logo{
+    flex-grow: 1;
+    /*padding-right: 5%;*/
+}
+
+#uni_logo > img{
+    height:80px;
+}
+
+.row2{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin-bottom: 200px;
+}
+
+.row2name{
+    flex-grow: 1;
+}
+
+.row2value{
+    flex-grow:1;
+}
+
+.table_grid{
+    display:grid;
+    grid-template-columns: minmax(250px, 4fr) 4fr;
+    grid-template-rows: repeat(11,1fr) 2fr 1fr 2fr 1fr 2fr;
+    border:black solid 1px;
+    grid-row-gap:0px;
+    margin-top:10vh;
+}
+
+.table_grid div:nth-child(4n-3) , .table_grid div:nth-child(4n-2) {
+    /*border:black solid 1px;*/
+    padding-left: 10px;
+    padding-bottom: 5px;
+    padding-top:5px;
+    background-color: lightgray;
+}
+
+.table_grid div:nth-child(4n-1) , .table_grid div:nth-child(4n-0) {
+    /*border:black solid 1px;*/
+    padding-left: 10px;
+    padding-bottom: 5px;
+    padding-top:5px;
+    padding-bottom: 10px;
+    background-color: white;
+}
+
+.table_grid div:nth-child(2n -1){
+    font-weight: bold;
+}
+
+span{
+    white-space: nowrap;
+}
+
+/* REST */
+
+#sid_input_text{
+    width: 15ch;
+    text-align: center;
+    justify-self: center;
+    /*border-radius: 25px;*/
+}
+
+#standard_header{
+    text-align: center;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+#sid_input_box {
+    display: grid;
+    /*display:none;*/
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+    width: 20ch;
+    margin-left: calc(50vw - 10ch);
+    margin-right: calc(50vw - 10ch);
+    margin-top: 4ch;
+    margin-bottom: 4ch;
+    align-content: start;
+    font-size:1.5rem;
+    row-gap: 0.5ch;
+}
+
+#sid2_subject_box{
+    display: grid;
+    display:none;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+            "subText subText"
+            "select select"
+            "next next";
+    justify-items: center;
+    align-items: center;
+    width: 50ch;
+    margin-left: calc(50vw - 25ch);
+    margin-right: calc(50vw - 25ch);
+    margin-top: 4ch;
+    margin-bottom: 4ch;
+    align-content: start;
+    font-size:1.5rem;
+    row-gap: 0.5ch;
+}
+
+#date_box{
+    display: grid;
+    display:none;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+            "subText subText"
+            "beginLabel beginPicker"
+            "endLabel endPicker"
+            "download download";
+    justify-items: center;
+    align-items: center;
+    width: 50ch;
+    margin-left: calc(50vw - 25ch);
+    margin-right: calc(50vw - 25ch);
+    margin-top: 4ch;
+    margin-bottom: 4ch;
+    align-content: start;
+    font-size:1.5rem;
+    row-gap: 0.5ch;
+}
+
+label{
+    display:block;
+    text-align: center;
+    justify-content: center;
+    justify-self: center;
+}
+
+#sid_next{
+    display:block;
+    /*margin:0.5vmax;*/
+    text-align: center;
+    justify-self: center;
+    width: 10ch;
+}
+
+#sid2_text{
+    grid-area: subText;
+    font-size: 1rem;
+    text-align: center;
+}
+
+#sid2_label{
+    grid-area: subLabel;
+    justify-self: right;
+    padding-right: 1ch;
+}
+
+#sid2_subject_select{
+    grid-area: select;
+    justify-self: center;
+}
+
+#sid2_next{
+    grid-area: next;
+}
+
+#begin_label{
+    font-size: 1rem;
+    grid-area: beginLabel;
+    justify-self: right;
+    padding-right: 1ch;
+}
+
+#end_label{
+    font-size: 1rem;
+    grid-area: endLabel;
+    justify-self: right;
+    padding-right: 1ch;
+}
+
+#begin_picker{
+    grid-area: beginPicker;
+    justify-self: left;
+}
+
+#end_picker{
+    grid-area: endPicker;
+    justify-self: left;
+}
+
+#download_button{
+    font-size: 1rem;
+    grid-area: download;
+}
+
+#date_text{
+    font-size: 1rem;
+    grid-area: subText;
+    width:50ch;
+    text-align: center;
+}
+
+.student_name{
+    font-style: italic;
+}
+
+.subject_name{
+    font-style: italic;
+}
+
+

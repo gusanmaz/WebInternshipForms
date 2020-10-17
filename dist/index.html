@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Staj Formu Hazırlama Sistemi</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="html2pdf.bundle.min.js" ></script>
+    <script src="index.js" type="module"></script>
+</head>
+<body>
+<a id="standard_header" href="">
+    <div>Çorlu Mühendislik Fakültesi </div>
+    <div>Bilgisayar Mühendisliği</div>
+    <div>Staj Formu Hazırlama Sistemi</div>
+</a>
+
+<div id="sid_input_box">
+    <label for="sid_input_text">Öğrenci Numaranız:</label>
+    <input type="text" id="sid_input_text" name="sid_val" pattern="[0-9]{10}">
+    <label for="year_input_text">Sınıfınız:</label>
+    <select type="text" id="year_input_text" name="year" >
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>4+</option>
+    </select>
+    <button id="sid_next">İleri</button>
+</div>
+
+<div id="sid2_subject_box">
+    <div id="sid2_text">Sayın <span class="student_name"></span> lütfen staj değerlendirme formu çıktısını almak istediğiniz stajınızı seçiniz.</div>
+    <!--label id="sid2_label" for="sid2_subject_select">Konu: </label-->
+    <select type="text" id="sid2_subject_select" name="subject" >
+        <option id="subject1">Staj 1</option>
+        <option id="subject2">Staj 2</option>
+    </select>
+    <button id="sid2_next">İleri</button>
+</div>
+
+<div id="date_box">
+    <div id="date_text">Sayın <span class="student_name"></span> lütfen  <span class="subject_name"></span> konulu stajınızın başlangıç ve bitiş tarihini seçiniz.</div>
+    <label id="begin_label" for="begin_picker">Başlangıç Tarihi:</label>
+    <input type="date" id="begin_picker" name="begin_date" min="2020-06-17" max="2020-10-18">
+    <label id="end_label" for="end_picker">Bitiş Tarihi:</label>
+    <input type="date" id="end_picker" name="end_date" min="2020-06-17" max="2020-10-18">
+    <button id="download_button">Staj Değerlendirme Formunu İndir</button>
+</div>
+
+<div id='student_form'>
+    <div id="form_header">
+        <div id="uni_logo"><img src="logo.png"> </div>
+        <div id="header_text">2019-2020 EĞİTİM ÖĞRETİM YILI UZAKTAN EĞİTİM STAJ ÖDEVİ DEĞERLENDİRME FORMU</div>
+    </div>
+    <div class = "table_grid">
+        <div>Bölüm:</div>
+        <div>Bilgisayar Mühendisliği</div>
+        <div>Öğrenci Ad-Soyad:</div>
+        <div id="name_val"></div>
+        <div>Öğrenci No:</div>
+        <div id="id_val"></div>
+        <div>Sınıf:</div>
+        <div id="year_val"></div>
+        <div>Ödev Konusu:</div>
+        <div id="subject_val"></div>
+        <div>Staj Türü:</div>
+        <div>Yazılım</div>
+        <div>Ödevin Verildiği Tarih:</div>
+        <div id="begin_val"></div>
+        <div>Ödevin Teslim Alındığı Tarih:</div>
+        <div id="end_val"></div>
+        <div>Staj Yapılan Gün Sayısı:</div>
+        <div id="days_val"></div>
+        <div>Kabul Edilen Gün Sayısı:</div>
+        <div></div>
+        <div>Başarı Durumu (Başarılı/Başarısız):</div>
+        <div></div>
+        <div>Açıklama(eğer var ise) :</div>
+        <div></div>
+        <div>Staj Danışmanı Ad Soyad:</div>
+        <div></div>
+        <div>Staj Danışmanı İmza:</div>
+        <div></div>
+        <div>Staj Komisyon Başkanı:</div>
+        <div>Dr. Öğr. Üyesi Ahmet SAYGILI</div>
+        <div>Staj Staj Komisyon Başkanı İmza:</div>
+        <div></div>
+    </div>
+</div>
+
+
+
+</body>
+</html>
