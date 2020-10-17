@@ -1,6 +1,6 @@
-#Internship Auto Form Generation Website
+# Internship Auto Form Generation Website
 
-##Purpose
+## Purpose
 
 This website generates PDF internship form files for students by entering their student IDs. 
 This is my first attempt to deal with internship related paperwork in my department.
@@ -14,18 +14,18 @@ this website is not approved for this semester because of differences in appeara
 two different kinds of forms. Therefore I started working on a [new project](https://github.com/gusanmaz/InternshipFormGenerator) that succeed in 
 generating similar-looking forms and other internship related paperwork afterwards.
 
-##Demo
+## Demo
 
 You could check the website at [https://bmstajkolayform.guvencusanmaz.repl.co/](https://bmstajkolayform.guvencusanmaz.repl.co/)
 The website asks for a student ID who is taking an internship project this summer semester.
 You could use star student John Doe's ID of `1850506803` to generate internship PDF forms for him :relieved:
 
-##Installation
+## Installation
 
 All files needed to for the website could be under `dist` folder. You could run `npm run build`
 to generate fresh *index.js* file needed by dist directory though it is not necessary. 
 
-##Student Internship Data 
+## Student Internship Data 
 Internship data for a particular student could be fetched sending a get request to
 `https://aqueous-shelf-29436.herokuapp.com/{studentID}.json` 
 Change student ID value of the URL accordingly. Please note that you need your own similar server
